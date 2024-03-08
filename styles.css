@@ -1,0 +1,196 @@
+.main{
+    background-color: darkorange;
+    color: #f9f9f9;
+}
+.personal{
+    background-color: yellow;
+    color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.hdwallpapers.in/download/shining_stars_with_background_of_dark_black_sky_hd_space-HD.jpg');
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 1.3);
+}
+#firstName, #phoneNumber,#state{
+    margin-right: 1.5%;
+}
+
+form.form2{
+    margin-top: 0.5%;
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+
+
+}
+.input-group {
+    display: flex ;
+    align-items: center;
+}
+
+.input-group label,
+.input-group select {
+    flex: 1;
+    color: white; 
+}
+
+
+.input-info{
+    display: flex;
+    align-items: center;
+}
+.certifications label{
+    width: 60%;
+}
+.input-info label {
+    flex: 1;
+    color: black; 
+}
+.input-group input[type="date"] {
+    flex: 1; 
+    margin-right: 60%;
+}
+#relocate{
+    margin-right: 50%;
+}
+.address{
+    display: flex;
+    align-items: center;
+}
+.address label {
+    flex: 1;
+    color: black; 
+}
+form h2 {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white; 
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+button,
+input[type="file"],
+input[type="checkbox"], #country {
+    color: rgba(255, 255, 255, 0.9); 
+    width: calc(100% - 20px); 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent; 
+    font-weight: bold; 
+    opacity: 0.9;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder,#country::placeholder {
+    color: rgba(255, 255, 255, 0.9); 
+    font-weight: bold; 
+    opacity: 0.9; 
+    margin-left: 5px;
+}
+#resume{
+    margin-bottom: 17px;
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: green; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    width: 30%;
+}
+.certifications{
+    opacity: 10;
+    color: white;
+}
+.next{
+    margin-left:70%;
+}
+#viewAsTableBtn{
+    width: 100%;
+}
+button:hover {
+    background-color:blue;
+}
+.personal:hover{
+    background-color:blue;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-top: 20px;
+    overflow-x: auto
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    color: brown;
+    white-space: nowrap;
+}
+th {
+    background-color:black;
+}
+#consent {
+    margin-top: -5%;
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#consent td {
+    border: 1px solid transparent; 
+    padding: 8px; 
+}
+#consent tr {
+    border: 1px solid transparent; 
+}
+#consent input[type="checkbox"] {
+    margin-right: 7px; 
+}
+#applicationsTable{
+    background-color: white;
+}
+#applicationsTable th{
+    border-right: 2px solid white;
+}
+
+#applicationsTable tr{
+    border-right: 2px solid white;
+}
+#country {
+    flex: 1;
+    margin-right: 1.5%; 
+    width: calc(101% - 9px); 
+}
+#relocate{
+    background-color: transparent;
+}

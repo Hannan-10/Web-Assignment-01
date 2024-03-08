@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="main">Job Application Form</h1>
+    <form id="jobApplicationForm" onsubmit="return validateForm()">
+        <h2 class="personal">Personal Information</h2>
+
+        <div class="input-group">
+            <label for="firstName"></label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+            <label for="lastName"></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+        </div>
+
+        <div class="input-info">
+            <label for="phoneNumber"></label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Phone #:"
+                required>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email Address:" required>
+        </div>
+
+        <label for="country"></label>
+        <select id="country" name="country" required>
+            <option value="">Choose Country</option>
+            <option value="AF" style="color: black;">Pakistan</option>
+            <option value="AX" style="color: black;">America</option>
+            <option value="AL" style="color: black;">India</option>
+            <option value="DZ" style="color: black;">Russia</option>
+        </select>
+
+
+        <label for="city"></label>
+        <input type="text" id="city" name="city" placeholder="City:">
+        <label for="street"></label>
+        <input type="text" id="street" name="street" placeholder="Street:" required>
+
+
+
+
+        <div class="address">
+            <label for="state"></label>
+            <input type="text" id="state" name="state" placeholder="State">
+            <label for="zipCode"></label>
+            <input type="text" id="zipCode" name="zipCode" pattern="[0-9]{5}" placeholder="zipCode" required>
+        </div>
+
+
+        <h2 class="personal">Resume and Cover Letter</h2>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+
+        <h2 class="personal">Education</h2>
+        <div class="input-group">
+            <label for="educationLevel"></label>
+            <input type="text" id="educationLevel" name="educationLevel" placeholder="Highest Education Level" required>
+        </div>
+        <div class="input-group">
+            <label for="schoolName"></label>
+            <input type="text" id="schoolName" name="schoolName" placeholder="School/University Name" required>
+        </div>
+        <div class="input-group">
+            <label for="major"></label>
+            <input type="text" id="major" name="major" placeholder="Major/Area of Study" required>
+        </div>
+        <div class="input-group">
+            <label for="graduationYear"></label>
+            <input type="text" id="graduationYear" name="graduationYear" placeholder="Graduation Year" required>
+        </div>
+
+        <h2 class="personal">Employment History</h2>
+        <div class="input-group">
+            <label for="jobTitles"></label>
+            <input type="text" id="jobTitles" name="jobTitles" placeholder="Previous Job Titles" required>
+        </div>
+        <div class="input-group">
+            <label for="companyNames"></label>
+            <input type="text" id="companyNames" name="companyNames" placeholder="Company Names" required>
+        </div>
+        <div class="input-group">
+            <label for="employmentDates"></label>
+            <input type="text" id="employmentDates" name="employmentDates" placeholder="Employment Year" required>
+        </div>
+        <div class="input-group">
+            <label for="jobResponsibilities"></label>
+            <input type="text" id="jobResponsibilities" name="jobResponsibilities" placeholder="Job Responsibilities"
+                required>
+        </div>
+
+        <h2 class="personal">Skills</h2>
+        <div class="input-group">
+            <label for="relevantSkills"></label>
+            <input type="text" id="relevantSkills" name="relevantSkills" placeholder="Relevant Skills" required>
+        </div>
+
+        <div class="input-group">
+            <label for="certifications" class="certificate">
+                Certificates:
+                <br>
+            </label>
+            <input type="file" id="certifications" name="certifications" accept=".pdf,.doc,.docx" multiple required>
+        </div>
+
+        <h2 class="personal">Availability</h2>
+
+        <div class="input-group">
+            <label for="startDate">Start Date:
+            <input type="date" id="startDate" name="startDate" required>
+        </label>
+        </div>
+
+        <div class="input-group">
+            <label for="workSchedule" style="margin-top: 10%;"></label>
+            <input type="text" id="workSchedule" name="workSchedule" placeholder="Preferred Work Schedule" required>
+        </div>
+        <div class="input-group">
+            <label for="relocate">Willingness to Relocate:
+            <select id="relocate" name="relocate" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </label>
+
+        </div>
+
+        <h2 class="personal">References</h2>
+        <div class="input-group">
+            <label for="referenceName"></label>
+            <input type="text" id="referenceName" name="referenceName" placeholder="Reference Name" required>
+        </div>
+        <div class="input-group">
+            <label for="referenceContact"></label>
+            <input type="text" id="referenceContact" name="referenceContact" pattern="[0-9]{10}" placeholder="Reference Contact Information"
+                required>
+        </div>
+        <div class="input-group">
+            <label for="relationship"></label>
+            <input type="text" id="relationship" name="relationship" placeholder="Relationship to Applicant" required>
+        </div>
+
+        <h2 class="personal">Additional Questions</h2>
+        <div class="input-group">
+            <label for="whyWork"></label>
+            <textarea id="whyWork" name="whyWork" rows="4"
+                placeholder="Why do you want to work for this company?"></textarea>
+        </div>
+
+        <table id="consent">
+            <tr>
+                <td><input type="checkbox" id="termsCheckbox" required></td>
+                <td><label for="termsCheckbox"> I agree to terms and conditions</label></td>
+                <br>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="privacyCheckbox" required></td>
+                <td><label for="privacyCheckbox"> I acknowledge my privacy policy</label></td>
+                <br>
+            </tr>
+        </table>
+
+        <br><br>
+        <button type="submit" class="next" id="subButton">Submit Application</button>
+        <button id="viewAsTableBtn">View Applications as Table</button>
+
+        <table id="applicationsTable" style="display:none;">
+            
+        </table>
+    </form>
+</body>
+
+</html>
